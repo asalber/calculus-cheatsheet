@@ -1,5 +1,5 @@
-% !TEX program = xelatex
 % Author: Alfredo Sánchez Alberca (asalber@ceu.es)
+% !TEX program = xelatex
 \documentclass[a4paper, 10pt]{article}
 \usepackage[top=2.5cm, bottom=3cm, left=2cm, right=2cm, headsep=1.5cm]{geometry}
 %\usepackage{fontspec}
@@ -27,6 +27,9 @@
 %\setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
 \setlist[description]{style=sameline,leftmargin=0cm}
 
+% Tables
+\usepackage{booktabs}
+
 % Sections
 \usepackage{titlesec}
 \titleformat{\section}
@@ -36,7 +39,7 @@
 {\color{color1}\normalfont\Large\bfseries}
 {\color{color1}\thesubsection}{1em}{}
 
-\lhead{\includegraphics{img/logo-uspceu.pdf}} 
+\lhead{\includegraphics{img/logo-uspceu.pdf}}
 \rhead{\url{http://aprendeconalf.es}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\floatpagefraction}{.8}
@@ -44,6 +47,10 @@
 
 \setlength{\columnsep}{1cm}
 
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+
 \begin{document}
-\include{calculus-formulas}
+\include{derivatives}
 \end{document}
